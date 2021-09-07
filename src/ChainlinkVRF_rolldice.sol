@@ -1,6 +1,8 @@
 pragma solidity 0.6.2;
 
-import "https://raw.githubusercontent.com/smartcontractkit/chainlink/develop/evm-contracts/src/v0.6/VRFConsumerBase.sol";
+import "../chainlink/contracts/src/v0.6/VRFConsumerBase.sol";
+import "../contracts/SafeMath.sol";
+
 
 // Source and description: https://ethereum.stackexchange.com/a/83616/55344
 contract Verifiable6SidedDiceRoll is VRFConsumerBase {
